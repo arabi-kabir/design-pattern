@@ -2,7 +2,7 @@
 
 // simple factory
 class PaymentFactory {
-    public static function initPayment ($paymentType) {
+    public static function initPayment ($paymentType) : Payment {
         switch ($paymentType) {
             case 'bkash':
                 return new BkashPayment();
